@@ -16,7 +16,7 @@ public class Thiskeyword {
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
     }
- // Main method to test the class
+    // Main method to test the class
 	public static void main(String[] args) {
 		Thiskeyword person = new Thiskeyword("Anisha", 20); // Create a new Person object
         person.displayDetails(); // Call the display method

@@ -1,69 +1,69 @@
 package collectionframework;
-import java.util.List;
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Vector;
-import java.util.Stack;
-import java.util.Queue;
-import java.util.PriorityQueue;
-import java.util.Deque;
-import java.util.ArrayDeque;
-import java.util.Set;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.SortedSet;
-import java.util.TreeSet;
+import java.util.List;
+class CollectionNode {
+    String name;
+    List<CollectionNode> children;
+
+    // Constructor to initialize node with name and empty children list
+    public CollectionNode(String name) {
+        this.name = name;
+        this.children = new ArrayList<>();
+    }
+
+    // Method to add child node
+    public void addChild(CollectionNode child) {
+        children.add(child);
+    }
+
+    // Recursive method to print hierarchy with indentation
+    public void printHierarchy(String indent) {
+        System.out.println(indent + name);
+        for (CollectionNode child : children) {
+            child.printHierarchy(indent + "    ");
+        }
+    }
+}
 
 public class CollectionHierarchy {
 
-	public static void main(String[] args) {
-		// List examples
-        List<String> arrayList = new ArrayList<String>();  // Specify generic type String
-        arrayList.add("ArrayList Item 1");
-        arrayList.add("ArrayList Item 2");
-        System.out.println("ArrayList: " + arrayList);
-        
-        List<String> linkedList = new LinkedList<String>();  // Specify generic type String
-        linkedList.add("LinkedList Item 1");
-        linkedList.add("LinkedList Item 2");
-        System.out.println("LinkedList: " + linkedList);
-        
-        Vector<String> vector = new Vector<String>();  // Specify generic type String
-        vector.add("Vector Item 1");
-        vector.add("Vector Item 2");
-        System.out.println("Vector: " + vector);
-        
-        Stack<String> stack = new Stack<String>();  // Specify generic type String
-        stack.push("Stack Item 1");
-        stack.push("Stack Item 2");
-        System.out.println("Stack: " + stack);
+ public static void main(String[] args) {
+	 // Create root node
+     CollectionNode iterable = new CollectionNode("Iterable");
 
-        // Queue examples
-        Queue<String> priorityQueue = new PriorityQueue<String>();  // Specify generic type String
-        priorityQueue.add("PriorityQueue Item 1");
-        priorityQueue.add("PriorityQueue Item 2");
-        System.out.println("PriorityQueue: " + priorityQueue);
+     // Create second level nodes
+     CollectionNode collection = new CollectionNode("Collection");
+     iterable.addChild(collection);
 
-        Deque<String> arrayDeque = new ArrayDeque<String>();  // Specify generic type String
-        arrayDeque.add("ArrayDeque Item 1");
-        arrayDeque.add("ArrayDeque Item 2");
-        System.out.println("ArrayDeque: " + arrayDeque);
-        
-        // Set examples
-        Set<String> hashSet = new HashSet<String>();  // Specify generic type String
-        hashSet.add("HashSet Item 1");
-        hashSet.add("HashSet Item 2");
-        System.out.println("HashSet: " + hashSet);
-        
-        Set<String> linkedHashSet = new LinkedHashSet<String>();  // Specify generic type String
-        linkedHashSet.add("LinkedHashSet Item 1");
-        linkedHashSet.add("LinkedHashSet Item 2");
-        System.out.println("LinkedHashSet: " + linkedHashSet);
+     // Create third level nodes
+     CollectionNode list = new CollectionNode("List");
+     CollectionNode queue = new CollectionNode("Queue");
+     CollectionNode set = new CollectionNode("Set");
+     collection.addChild(list);
+     collection.addChild(queue);
+     collection.addChild(set);
 
-        SortedSet<String> treeSet = new TreeSet<String>();  // Specify generic type String
-        treeSet.add("TreeSet Item 1");
-        treeSet.add("TreeSet Item 2");
-        System.out.println("TreeSet: " + treeSet);
-	}
+     // Add nodes to List
+     list.addChild(new CollectionNode("ArrayList"));
+     list.addChild(new CollectionNode("LinkedList"));
+     CollectionNode vector = new CollectionNode("Vector");
+     list.addChild(vector);
+     vector.addChild(new CollectionNode("Stack"));
 
+     // Add nodes to Queue
+     queue.addChild(new CollectionNode("PriorityQueue"));
+     CollectionNode deque = new CollectionNode("Deque");
+     queue.addChild(deque);
+     deque.addChild(new CollectionNode("ArrayDeque"));
+
+     // Add nodes to Set
+     set.addChild(new CollectionNode("HashSet"));
+     set.addChild(new CollectionNode("LinkedHashSet"));
+     CollectionNode sortedSet = new CollectionNode("SortedSet");
+     set.addChild(sortedSet);
+     sortedSet.addChild(new CollectionNode("TreeSet"));
+
+     // Print the hierarchy
+     iterable.printHierarchy("");
+ }
 }

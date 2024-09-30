@@ -16,7 +16,7 @@ public class PublicAccessSpecifier {
         System.out.println("Car Model: " + model);
         System.out.println("Year: " + year);
     }
- // Main method to test the class
+    // Main method to test the class
 	public static void main(String[] args) {
 		PublicAccessSpecifier car = new PublicAccessSpecifier("Toyota Corolla", 2020); // Create a new Car object
         car.displayDetails(); // Call the display method

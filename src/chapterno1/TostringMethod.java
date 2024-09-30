@@ -22,9 +22,9 @@ public class TostringMethod {
                 ", year=" + year +
                 '}';
     }
- // Main method to test the class
+    // Main method to test the class
 	public static void main(String[] args) {
-Car car = new Car("Toyota", "Camry", 2022);
+		Car car = new Car("Toyota", "Camry", 2022);
         
         // Displaying the car details using toString()
         System.out.println(car);

@@ -24,8 +24,8 @@ public class HashcodeMethod {
     public String toString() {
         return "Person{name='" + name + "', age=" + age + "}";
     }
-// Main method to test the class
-public static void main(String[] args) {
+    // Main method to test the class
+    public static void main(String[] args) {
 	HashcodeMethod person1 = new HashcodeMethod("Anisha", 20);
 	HashcodeMethod person2 = new HashcodeMethod("Abantika", 20);
 

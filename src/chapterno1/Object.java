@@ -16,7 +16,7 @@ public class Object {
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
     }
-// Main method to test the class
+    // Main method to test the class
 	public static void main(String[] args) {
 		// Creating an object of the Person class
 		Object  person = new Object("Anisha", 20);

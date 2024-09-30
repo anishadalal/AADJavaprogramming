@@ -31,7 +31,7 @@ public class MyDate {
 
         // Using parameterized constructor
         MyDate date2 = new MyDate(20, 9, 2024);
-        date2.displayDate();  // Output: Date: 15-8-2023
+        date2.displayDate();  // Output: Date: 20-9-20204
 
 	}
 

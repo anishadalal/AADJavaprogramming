@@ -11,7 +11,7 @@ public class SubofLong {
         float sub = num1 - num2;
 		
      // Print the result
-        System.out.println("The sum of " + num1 + " and " + num2 + " is: " + sub);
+        System.out.println("The subtraction of " + num1 + " and " + num2 + " is: " + sub);
 
 
 	}
