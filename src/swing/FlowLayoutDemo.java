@@ -25,7 +25,7 @@ public class FlowLayoutDemo {
         frame.add(button2);
         frame.add(button3);
         frame.add(button4);
-        frame.add(button5);
+        frame.add(button5); 
 
         // Make the frame visible
         frame.setVisible(true);

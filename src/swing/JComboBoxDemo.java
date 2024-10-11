@@ -14,7 +14,7 @@ public class JComboBoxDemo {
         frame.setLayout(null);  // Use null layout for manual positioning
 
         // Create an array of items for the JComboBox
-        String[] items = {"Apple", "Banana", "Cherry", "Date", "Elderberry"};
+        String[] items = {"Apple", "Banana", "Cherry", "Date"};
 
         // Create a JComboBox with the items
         JComboBox<String> comboBox = new JComboBox<>(items);
