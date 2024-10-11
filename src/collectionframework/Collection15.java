@@ -12,7 +12,7 @@ public class Collection15 {
 		System.out.println( names); 
 		names.addLast("Rajkumar");
 		System.out.println( names);
-		names.add(3,"Rani");
+		names.add("Rani");
 		System.out.println( names);
 
 	}

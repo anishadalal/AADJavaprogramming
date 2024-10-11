@@ -19,9 +19,12 @@ public class Collection3 {
 		Student s2=new Student(102,"Sima",24); 
 		Student s3=new Student(103,"Sonal",25); 
 		java.util.ArrayList<Student> al = new java.util.ArrayList<>(); 
-		al.add(s1); al.add(s2); al.add(s3); 
+		al.add(s1); 
+		al.add(s2); 
+		al.add(s3); 
 		Iterator<Student> itr = al.iterator();
-		while(itr.hasNext()) { Student st=itr.next(); 
+		while(itr.hasNext()) { 
+			Student st=itr.next(); 
 		System.out.println(st.rollno + " " + st.name + " " + st.age);
 	}
 

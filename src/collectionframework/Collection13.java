@@ -1,4 +1,4 @@
-package collectionframework;
+ package collectionframework;
 //6.clear
 
 public class Collection13 {

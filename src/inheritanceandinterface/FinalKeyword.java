@@ -11,7 +11,8 @@ final class Constants {
 }
 
 //Attempting to extend a final class will cause an error
-//class ExtendedConstants extends Constants { } // Uncommenting this line will cause a compilation error
+//class ExtendedConstants extends Constants { } 
+// Uncommenting this line will cause a compilation error
 public class FinalKeyword {
 
 	public static void main(String[] args) {

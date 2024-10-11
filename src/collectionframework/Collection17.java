@@ -8,7 +8,7 @@ public class Collection17 {
 		names.add("Alice"); 
 		names.add("Bob");
 		System.out.println( names);
-		names.addFirst("ram"); 
+		names.addFirst("Ram"); 
 		System.out.println( names);
 
 	}

@@ -11,7 +11,8 @@ public class Collection1 {
 		al.add("Ram");
 		Iterator<String> itr = al.iterator(); 
 		while(itr.hasNext()) { 
-			System.out.println(itr.next()); }
+			System.out.println(itr.next());
+			}
 		
 
 	}

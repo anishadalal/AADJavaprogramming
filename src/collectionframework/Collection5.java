@@ -16,7 +16,7 @@ public class Collection5 {
 
 	        Iterator<String> itr = al.iterator();
 	        while (itr.hasNext()) {
-	            System.out.println(itr.next());  // Should print "s\Sonoo"
+	            System.out.println(itr.next());  // Should print "Sonoo"
 		}
 
 	}

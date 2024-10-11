@@ -6,7 +6,8 @@ public class Collection18 {
 		java.util.LinkedList<String> names = new java.util.LinkedList<>(); 
 		names.add("Charlie");
 		names.add("Alice");
-		names.add("Bob"); System.out.println( names);
+		names.add("Bob");
+		System.out.println( names);
 		names.addLast("Rajkumar"); 
 		System.out.println( names);
 
