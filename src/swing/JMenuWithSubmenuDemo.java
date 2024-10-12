@@ -101,7 +101,7 @@ public class JMenuWithSubmenuDemo {
         frame.setJMenuBar(menuBar);
 
         // Make the frame visible
-        frame.setVisible(true);
+        frame.setVisible(true);  
 
 	}
 
