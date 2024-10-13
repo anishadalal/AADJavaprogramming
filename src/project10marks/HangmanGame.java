@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Random;
 	public class HangmanGame extends JFrame implements ActionListener {
 		private static final long serialVersionUID = 8747596352378689420L;
-		private static final List<String> WORDS = Arrays.asList("JAVA", "SWING", "PROGRAMMING", "HANGMAN", "COMPUTER");
+		private static final List<String> WORDS = Arrays.asList("MANGO", "APPLE", "", "CHERRY", "BANANA", "STRAWBERRY", "BLACKBERRY", "BLUEBERRY", "WATERMELON", "ICEAPPLE", "WOODAPPLE", "PINEAPPLE", "CUSTERDAPPLE");
 	    private String selectedWord;
 	    private StringBuilder currentGuess;
 	    private int attemptsLeft;
@@ -26,7 +26,7 @@ import java.util.Random;
 
 	        selectedWord = selectRandomWord();
 	        currentGuess = new StringBuilder("_".repeat(selectedWord.length()));
-	        attemptsLeft = 6;
+	        attemptsLeft = 10;
 
 	        wordLabel = new JLabel("Word: " + currentGuess);
 	        attemptsLabel = new JLabel("Attempts left: " + attemptsLeft);
