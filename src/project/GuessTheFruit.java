@@ -1,4 +1,4 @@
-package project10marks;
+package project;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -139,5 +139,6 @@ public class GuessTheFruit extends JFrame implements ActionListener {
     public static void main(String[] args) {
         new GuessTheFruit();  // Instantiate GuessTheFruit class
     }
-} 
+}
+
 
